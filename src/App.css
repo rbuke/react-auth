@@ -21,6 +21,7 @@
 .listItem{
   margin-right: 20px;
   font-weight: 500px;
+  font-size: 18px;
   cursor: pointer;  
 }
 
@@ -168,11 +169,11 @@
 }
 
 .google{
-  background-color: red;
+  background-color: rgba(205, 95, 48, 0.919);
 }
 
 .facebook{
-  background-color: blue;
+  background-color: rgb(64, 64, 220);
 }
 
 .github{
@@ -194,7 +195,7 @@ input{
 
 .submit{
   width: 200px;
-  background-color:  rgba(102, 16, 83, 0.698);
+  background-color: rgba(128, 0, 128, 0.671);
   color: white;
   font-weight: bold;
   border: none;
@@ -204,6 +205,11 @@ input{
 .loginTitle{
   position: absolute;
   top: 150px;
-  color: lightgray;
+  color: darkgray;
 
+}
+
+.link{
+  color: inherit;
+  text-decoration: none;
 }

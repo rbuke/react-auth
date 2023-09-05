@@ -1,14 +1,22 @@
-const Navbar = () => {
+import { Link } from "react-router-dom";
+
+const Navbar = ({user}) => {
     return (
         <div className="navbar">
-            <span className="logo">Lama App</span>
-            <ul className="list">
-                <li className="listItem">
-                    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3Dcat&psig=AOvVaw2OqYIpL9wpPY-2cbgtgx_r&ust=1693942133437000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCLDSyKrYkYEDFQAAAAAdAAAAABAE" alt="" className="avatar" />
-                </li>
-                <li className="listItem">John Doe</li>
-                <li className="listItem">Log Out</li>
-            </ul>
+            <span className="logo"> 
+                <Link className="link" to ="/">Pleroma App</Link>
+            </span>{
+                user ? (
+        
+                    <ul className="list">
+                        <li className="listItem">
+                            <img src="../img/github.png" alt="" className="avatar" />
+                        </li>
+                        <li className="listItem">John Doe</li>
+                        <li className="listItem">Log Out</li>
+                    </ul>
+            ) : (<Link className="link" to="login">Login</Link>)
+        }
         </div>  
     );
 };
